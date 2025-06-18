@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font-main: 'Poppins', sans-serif;
+    --font-thin: 100;
+
+    --bg-color: #1a1a1a;
+    --bg-gradient: radial-gradient(
+        circle at 50% 20%,
+        #2A1A35 0%,
+        #1A1A1A 60%,
+        #0F0F0F 100%
+    );
+    --text-color: #F5F5F5;
+    --primary-color: #4A148C;
+    --secondary-color: #D32F2F;
+    --accent-color: #9E9E9E;
+}
+
+[data-theme="light"] {
+    --font-thin: 200;
+
+    --bg-color: #ffffff;
+    --bg-gradient: radial-gradient(
+        circle at 50% 20%,
+        #f7f2ff 0%,
+        #ffffff 60%,
+        #eeeeee 100%
+    );
+    --text-color: #1A1A1A;
+    --primary-color: #4A148C;
+    --secondary-color: #D32F2F;
+    --accent-color: #333333;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-main);
+    background: var(--bg-gradient);
+    color: var(--text-color);
+    transition:
+        background 0.4s ease,
+        color 0.4s ease,
+        border-color 0.4s ease,
+        fill 0.4s ease;
+    min-height: 100dvh;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+button{
+    background: none;
+    border: none;
+    color: var(--text-color);
+}
+/* THEME COLOR */
+.container {
+    --color: var(--text-color);
+    --size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+}
+
+.container .moon {
+    position: absolute;
+    animation: keyframes-fill .5s;
+}
+
+.container .sun {
+    position: absolute;
+    display: none;
+    animation: keyframes-fill .5s;
+}
+
+/* ------ On check event ------ */
+.container input:checked ~ .moon {
+    display: none;
+}
+
+.container input:checked ~ .sun {
+    display: block;
+}
+
+/* ------ Hide the default checkbox ------ */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* ------ Animation ------ */
+@keyframes keyframes-fill {
+    0% {
+        transform: rotate(-360deg) scale(0);
+        opacity: 0;
+    }
+
+    75% {
+        transform: rotate(25deg);
+    }
+}
+/* --------------------- */
+nav{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 10rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+nav>div{
+    display: flex;
+    flex: 1;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+nav>div a{
+    opacity: .7;
+}
+.mainContainer{
+    width: 50%;
+    margin: 0 auto;
+}
+section{
+    margin: 2rem 0;
+}
+h1{
+    font-size: 4rem;
+    margin: 0;
+}
+h2{
+    font-size: 3rem;
+    margin: 0;
+}
+h3{
+    font-size: 2.8rem;
+    margin: 0;
+}
+h4{
+    font-size: 2.5rem;
+    margin: 0;
+}
+p{
+    font-size: 1.75rem;
+    margin: 0;
+    padding: 0;
+}
