@@ -88,14 +88,14 @@ h3{
 .aboutMe-info-buttons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
     gap: 1rem;
     padding-bottom: 2rem;
 }
 
 .btn-icon {
-    min-width: 220px;
+    width: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,15 +134,19 @@ h3{
     font-style: italic;
     margin-bottom: 1rem;
 }
-.technology-buttons{
-    margin-bottom: 2rem;
-}
 
 .technology-buttons {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    align-items: center;
     padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+@media (max-width: 762px) {
+    .technology-buttons{
+        justify-content: center;
+    }
 }
 
 .tech-button {
@@ -267,17 +271,88 @@ h3{
 }
 
 /* Projects */
+
 .project-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
-.project-item{
+.project-container h3{
+    width: 100%;
+    text-align: left;
+}
+.project-item {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch; 
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+.project-image{
+    width: 275px;
+    height: auto;
+    min-height: 175px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+}
+.project-info p {
+    font-size: 1.4rem;
+}
+.project-technologies{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    gap: 1rem;
+    width: 100%;
 }
-#project-fcklassic{
-    background-image: url('');
+.project-tech{
+    min-width: 75px;
+}
+.project-tech img{
+    width: 17px;
+    height: 17px;
+}
+.project-actions{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-actions a{
+    font-size: 1.3rem;
+    height: auto;
+    padding: .7rem 1.4rem;
+}
+#project-fcklassic {
+    background-image: url('../img/fcklassic.webp');
+}
+
+#project-thbhotels {
+    background-image: url('../img/bitmap.jpg');
+}
+
+#project-rivo {
+    background-image: url('../img/logoRivo.png');
+}
+
+
+.tooltip {
+    position: relative;
+    cursor: not-allowed;
+    background: rgba(255, 50, 50, 0.1); /* rojo muy tenue */
+    border: 1px solid rgba(255, 50, 50, 0.4); /* rojo semitransparente */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 0 10px rgba(255, 50, 50, 0.15);
 }
