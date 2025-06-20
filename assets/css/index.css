@@ -101,7 +101,6 @@ h3{
     justify-content: center;
     gap: 0.8rem;
     background: rgba(74, 20, 140, 0.15);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -109,10 +108,11 @@ h3{
     color: var(--text-color);
     padding: 1rem 2rem;
     border-radius: 12px;
-    font-size: 1.7rem;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-size: 1.6rem;
+    height: auto;
 }
 
 .btn-icon i {
@@ -120,11 +120,22 @@ h3{
     color: inherit;
 }
 
-.btn-icon:hover {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transform: scale(1.02);
+[data-theme="dark"] .btn-icon:hover {
+    background-color: #1a1a1a;
+    color: #d4af37;
+    border-color: #d4af37;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
 }
+
+[data-theme="light"] .btn-icon:hover {
+    background-color: #f4e9ff;
+    color: #4A148C;
+    border-color: #4A148C;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(74, 20, 140, 0.25);
+}
+
 
 .technology-info-container{
     padding: 0 2rem;
@@ -222,12 +233,12 @@ h3{
 }
 
 .tech-button.php:hover {
-    border-color: #ffffff;
+    border-color: var(--text-color);
     background-color: #8892beB3;
 }
 
 .tech-button.laravel:hover {
-    border-color: #ffffff;
+    border-color: var(--text-color);
     background-color: #f55247B3;
 }
 
@@ -330,12 +341,15 @@ h3{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
     gap: 1rem;
 }
 
 .project-actions a{
     font-size: 1.3rem;
     height: auto;
+    min-width: 50px;
+    width: 160px;
     padding: .7rem 1.4rem;
 }
 #project-fcklassic {
@@ -381,4 +395,31 @@ h3{
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 0 10px rgba(255, 50, 50, 0.15);
+}
+.btn-icon.tooltip:hover {
+    background-color: #ffdddd;
+    color: #990000;
+    border-color: #ffaaaa;
+    box-shadow: 0 0 10px rgba(255, 80, 80, 0.3);
+    transform: scale(1.02);
+}
+.copy-tooltip {
+    position: absolute;
+    top: -30px;
+    background: #4A148C;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 1.7rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.btn-icon {
+    position: relative;
+}
+
+.btn-icon.copied .copy-tooltip {
+    opacity: 1;
 }
