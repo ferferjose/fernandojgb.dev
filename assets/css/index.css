@@ -428,3 +428,124 @@ h3{
 .btn-icon.copied .copy-tooltip {
     opacity: 1;
 }
+
+/* Experience */
+
+.experience-container h3 {
+    font-size: 2.6rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.timeline-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-left: 2px solid color-mix(in srgb, var(--text-color) 30%, transparent);
+    position: relative;
+}
+
+.timeline-entry {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-info {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.timeline-info .dot {
+    position: absolute;
+    left: -7px;
+    top: 5px;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #9B59B6;
+    border-radius: 50%;
+}
+
+.role {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #9B59B6;
+}
+
+.company {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.date {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.timeline-description {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.timeline-link {
+    color: #9B59B6;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1.4rem;
+}
+.timeline-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .timeline-entry {
+        grid-template-columns: 1fr;
+    }
+    .timeline-info {
+        padding-left: 2rem;
+    }
+    .timeline-description{
+        padding-left: 2rem;
+    }
+    .timeline-description p{
+        font-size: 1.5rem;
+    }
+}
+.glass-dot {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    z-index: 2;
+}
+
+[data-theme="dark"] .glass-dot {
+    background: #9B59B6;
+    box-shadow: 0 0 10px rgba(155, 89, 182, 0.6);
+    border: 2px solid #ffffff22;
+}
+
+[data-theme="light"] .glass-dot {
+    background: rgba(74, 20, 140, 0.15);
+    border-radius: 100px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(74, 20, 140, 0.44);
+}
