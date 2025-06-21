@@ -71,6 +71,7 @@
 h1{
     margin-bottom: 1rem;
 }
+
 h2{
     font-weight: 200;
     font-style: italic;
@@ -87,10 +88,12 @@ h3{
 .aboutMe-info-container{
     padding: 0 2rem;
 }
-.aboutMe-info-container p:nth-child(2){
-    margin-bottom: 2rem;
+.aboutMe-info-container p{
+    margin: 1rem 0;
 }
+
 .aboutMe-info-buttons {
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
