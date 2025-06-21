@@ -221,6 +221,29 @@ h3{
     border-color: var(--text-color);
     background-color: #e44d26B3;
 }
+.tech-button.mysql {
+    border-color: rgba(0, 117, 143, 0.4);
+}
+
+.tech-button.mysql:hover {
+    background-color: rgba(0, 117, 143, 0.15);
+    border-color: var(--text-color);
+}
+.tech-button.git {
+    border-color: rgba(240, 80, 51, 0.4);
+}
+
+.tech-button.git:hover {
+    background-color: rgba(240, 80, 51, 0.45);
+    border-color: var(--text-color);
+}
+.tech-button i.fa-git-alt {
+    font-size: 2.4rem;
+    color: rgba(240, 80, 51);
+}
+
+
+
 
 .tech-button.css:hover {
     border-color: var(--text-color);

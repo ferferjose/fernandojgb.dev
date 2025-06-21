@@ -47,7 +47,7 @@ html {
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 0 6rem 0;
     font-family: var(--font-main);
     background: var(--bg-gradient);
     color: var(--text-color);
@@ -155,6 +155,9 @@ nav .navLinks{
 }
 nav>div a{
     opacity: .7;
+}
+nav>div a:hover{
+    opacity: 1;
 }
 .navActions{
     display: flex;
