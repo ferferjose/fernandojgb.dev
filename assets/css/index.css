@@ -318,6 +318,23 @@ h3{
     border-color: var(--text-color);
     background-color: #61DBFBB3;
 }
+.tech-button.figma {
+    border-color: rgba(255, 0, 141, 0.4);
+}
+
+.tech-button.figma:hover {
+    background-color: rgba(255, 0, 141, 0.15);
+    border-color: var(--text-color);
+}
+
+.tech-button.drawio {
+    border-color: rgba(255, 149, 0, 0.4);
+}
+
+.tech-button.drawio:hover {
+    background-color: rgba(255, 149, 0, 0.15);
+    border-color: var(--text-color);
+}
 
 /* Projects */
 
