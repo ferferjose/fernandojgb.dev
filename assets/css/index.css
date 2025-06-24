@@ -335,6 +335,14 @@ h3{
     background-color: rgba(255, 149, 0, 0.15);
     border-color: var(--text-color);
 }
+.tech-button.c-lang {
+    border-color: rgba(0, 102, 204, 0.4);
+}
+
+.tech-button.c-lang:hover {
+    background-color: rgba(0, 102, 204, 0.15);
+    border-color: var(--text-color);
+}
 
 /* Projects */
 
