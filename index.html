@@ -105,7 +105,10 @@
                         <img src="assets/img/c.png" alt="Lenguaje C" />
                         C
                     </button>
-
+                    <button class="tech-button tailwind">
+                        <img src="assets/img/cSharp.png" alt="C Sharp logo" />
+                        C#
+                    </button>
                     <button class="tech-button mysql">
                         <img src="assets/img/mysql.png" alt="MySQL" />
                         MySQL
@@ -146,13 +149,9 @@
                 
                 <h4>Aprendiendo actualmente</h4>
                 <div class="technology-buttons">
-                    <button class="tech-button tailwind">
-                        <img src="assets/img/cSharp.png" alt="C Sharp logo" />
-                        C#
-                    </button>
-                    <button class="tech-button react">
-                        <img src="assets/img/unity.png" alt="Unity logo" />
-                        Unity
+                    <button class="tech-button js">
+                        <img src="assets/img/Python.png" alt="Python logo" />
+                        Pyton
                     </button>
                 </div>
 
@@ -175,36 +174,7 @@
         </section>
         <section id="projects" class="project-container">
             <h3><i class="fa-solid fa-screwdriver-wrench"></i> Proyectos</h3>
-            <!-- <div class="project-item">
-                <div class="project-image" id="project-unity"></div>
-                <div class="project-info">
-                    <h4>Nombre confidencial</h4>
-                    <div class="project-technologies">
-                        <button class="project-tech tech-button bootstrap">
-                            <img src="assets/img/unity.png" alt="Bootstrap" />
-                            Unity
-                        </button>
-                        <button class="project-tech tech-button js">
-                            <img src="assets/img/cSharp.png" alt="JavaScript" />
-                            C#
-                        </button>
-                    </div>
-                    <p>
-                        Proyecto en desarrollo junto a dos compañeros developers, donde ejerzo como team leader y desarrollador. Estamos creando un juego con Unity aplicando metodología Scrum, aprendiendo todo desde cero sin experiencia previa en el motor. Es un proyecto ambicioso y a largo plazo que refleja nuestra motivación, capacidad de adaptación y ganas de crecer como desarrolladores.
-                    </p>
-                    <div class="project-actions">
-                        <a class="project-tech btn-icon tooltip" href="" target="_blank">
-                            <i class="fa-solid fa-eye"></i> Preview
-                            <span class="tooltip-text">Código privado</span>
-                        </a>
-                        <a class="project-tech btn-icon tooltip" target="_blank">
-                            <i class="fa-brands fa-github"></i> Code
-                            <span class="tooltip-text">Código privado</span>
-                        </a>
-                    </div>
-                </div>
-            </div> -->
-            <div class="project-item">
+            <article class="project-item">
                 <div class="project-image" id="project-fcklassic"></div>
                 <div class="project-info">
                     <h4>FC Klassic Cars </h4>
@@ -235,41 +205,43 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="project-item">
-                <div class="project-image" id="project-thbhotels"></div>
+            </article>
+            <article class="project-item" itemscope itemtype="https://schema.org/SoftwareApplication">
+                <div class="project-image" id="project-thbhotels" aria-hidden="true"></div>
+
                 <div class="project-info">
-                    <h4>Proyecto con THB Hotels </h4>
-                    <div class="project-technologies">
-                        <button class="project-tech tech-button bootstrap">
-                            <img src="assets/img/bootstrap-5-logo-icon.png" alt="Bootstrap" />
-                            Bootstrap
-                        </button>
-                        <button class="project-tech tech-button js">
-                            <img src="assets/img/js.png" alt="JavaScript" />
-                            JavaScript
-                        </button>
-                        <button class="project-tech tech-button laravel">
-                            <img src="assets/img/laravel.png" alt="Laravel" />
-                            Laravel
-                        </button>
-                    </div>
-                    <p>
-                        Durante mis prácticas de tres meses en THB Hotels, lideré un proyecto real aplicando metodología Scrum. Roté por diseño, frontend, backend y gestión de tareas, lo que me dio una visión global del desarrollo profesional. Esta experiencia reforzó mis habilidades de liderazgo, coordinación y resolución de problemas técnicos en equipo.
-                    </p>
-                    <div class="project-actions">
-                        <a class="project-tech btn-icon tooltip">
-                            <i class="fa-solid fa-eye"></i> Preview
-                            <span class="tooltip-text">Preview no disponible</span>
-                        </a>
-                        <a class="project-tech btn-icon tooltip">
-                            <i class="fa-brands fa-github"></i> Code
-                            <span class="tooltip-text">Código privado</span>
-                        </a>
-                    </div>
+                <h4 itemprop="name">THB Hotels · Plataforma interna</h4>
+                <div class="project-technologies">
+                    <a class="project-tech tech-button laravel" href="#" aria-disabled="true" tabindex="-1">
+                    <img src="assets/img/laravel.png" alt="Laravel" loading="lazy">Laravel
+                    </a>
+                    <a class="project-tech tech-button js" href="#" aria-disabled="true" tabindex="-1">
+                    <img src="assets/img/js.png" alt="JavaScript" loading="lazy">JavaScript
+                    </a>
+                    <a class="project-tech tech-button bootstrap" href="#" aria-disabled="true" tabindex="-1">
+                    <img src="assets/img/bootstrap-5-logo-icon.png" alt="Bootstrap" loading="lazy">Bootstrap
+                    </a>
                 </div>
-            </div>
-            <div class="project-item">
+
+                <p class="project-summary" itemprop="description">
+                    Desarrollo y mejora de la plataforma interna con <strong>Laravel</strong>, <strong>PHP</strong> y <strong>JavaScript</strong>. 
+                    Implemento nuevas funcionalidades, soluciono incidencias y refactorizo código para optimizar rendimiento y mantenibilidad. 
+                    También colaboro en la integración de módulos, automatización de tareas y mejora continua del flujo de trabajo interno.
+                </p>
+
+                <div class="project-actions">
+                    <a class="project-tech btn-icon tooltip is-disabled" aria-disabled="true" tabindex="-1">
+                    <i class="fa-solid fa-eye"></i> Preview
+                    <span class="tooltip-text">Preview no disponible</span>
+                    </a>
+                    <a class="project-tech btn-icon tooltip is-disabled" aria-disabled="true" tabindex="-1">
+                    <i class="fa-brands fa-github"></i> Code
+                    <span class="tooltip-text">Código privado</span>
+                    </a>
+                </div>
+                </div>
+            </article>
+            <article class="project-item">
                 <div class="project-image" id="project-rivo"></div>
                 <div class="project-info">
                     <h4>Rivo</h4>
@@ -287,24 +259,39 @@
                             Laravel
                         </button>
                     </div>
-                        <p>
-                            Rivo es una aplicación web para la gestión financiera personal que desarrollé como Trabajo de Fin de Grado, basada en una idea que llevaba tiempo madurando. Me encargué del diseño, la lógica de negocio y la experiencia de usuario junto con mi equipo, aplicando metodología Scrum durante el proceso. Rivo refleja tanto mi crecimiento técnico como mi compromiso por crear soluciones con propósito.
-                        </p>
-
+                    <p>
+                        Rivo es una aplicación web para la gestión financiera personal que desarrollé como Trabajo de Fin de Grado, basada en una idea que llevaba tiempo madurando. Me encargué del diseño, la lógica de negocio y la experiencia de usuario junto con mi equipo, aplicando metodología Scrum durante el proceso. Rivo refleja tanto mi crecimiento técnico como mi compromiso por crear soluciones con propósito.
+                    </p>
                     <div class="project-actions">
-                        <a class="project-tech btn-icon" href="https://18.proyectos.esvirgua.com/" target="_blank">
+                        <a class="project-tech btn-icon tooltip">
                             <i class="fa-solid fa-eye"></i> Preview
+                            <span class="tooltip-text">Preview no disponible</span>
                         </a>
                         <a class="project-tech btn-icon" href="https://github.com/ferferjose/Rivo.git" target="_blank">
                             <i class="fa-brands fa-github"></i> Code
                         </a>
                     </div>
                 </div>
-            </div>
+            </article>
         </section>
         <section id="experience">
             <h3><i class="fa-solid fa-briefcase"></i> Experiencia</h3>
             <ol class="timeline-list">
+                <li class="timeline-entry">
+                    <div class="timeline-info">
+                        <span class="dot glass-dot"></span>
+                        <h4 class="role">Master de especialización de Inteligencia artificial y Big Data</h4>
+                        <h5 class="company">IES Augustóbirga</h5>
+                        <time class="date">Octubre 2025 – Actualmente</time>
+                    </div>
+                    <div class="timeline-description">
+                        <p>Formación avanzada en <strong>modelos de IA</strong>, <strong>aprendizaje automático</strong> y 
+                            <strong>procesamiento de grandes volúmenes de datos</strong>, integrando herramientas como 
+                            Python, TensorFlow, Spark y entornos de análisis en la nube. 
+                            Enfocado en la aplicación práctica de IA en sistemas empresariales y financieros.
+                        </p>
+                    </div>
+                </li>
                 <li class="timeline-entry">
                     <div class="timeline-info">
                         <span class="dot glass-dot"></span>
